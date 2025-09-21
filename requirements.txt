@@ -2,7 +2,6 @@ python-telegram-bot==22.3
 rembg~=2.0.67
 pillow~=11.1.0
 markdown~=3.8
-google
-protobuf~=5.29.3
+google-genai==1.38.0
 flask~=2.3.3
 openai~=1.99.9
