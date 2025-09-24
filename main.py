@@ -20,7 +20,7 @@ def hello_world():
     return "<p>Welcome to Telegram bot for describing images!</p>"
 
 def run_app():
-    app.run(port=7999,host='127.0.0.1')
+    app.run(port=7999,host='0.0.0.0')
 
 t = threading.Thread(target=run_app, args = ())
 t.start()
@@ -109,6 +109,7 @@ def main():
 
 if __name__=="__main__":
     main()
+
 
 
 
