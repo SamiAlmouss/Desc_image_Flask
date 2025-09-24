@@ -22,7 +22,8 @@ def hello_world():
 def run_app():
     app.run(port=7999,host='0.0.0.0')
 
-t = threading.Thread(target=run_app, args = ())
+t = threading.Thread(target=run_app)
+t.daemon = True
 t.start()
 
 
@@ -109,6 +110,7 @@ def main():
 
 if __name__=="__main__":
     main()
+
 
 
 
